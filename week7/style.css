@@ -1,0 +1,241 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: #dcdcdc;
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 12px;
+}
+
+#wrap {
+    width: 900px;
+    margin: 20px auto;
+    background: #fff;
+    border: 1px solid #ccc;
+}
+
+#header {
+    height: 180px;
+    background: linear-gradient(rgba(0,0,0,0.25), rgba(0,0,0,0.25)),
+                url("Flower Shop.jfif") center/cover no-repeat;
+    position: relative;
+}
+
+#logo {
+    padding: 18px 0 0 45px;
+}
+
+#logo img {
+    width: 180px;
+    height: 60px;
+    object-fit: cover;
+    border: 2px solid #cc4b4b;
+    background: #b92025;
+}
+
+#menu_top {
+    margin: 45px 30px 0 30px;
+    background: rgba(255,255,255,0.7);
+    height: 40px;
+    border-radius: 10px 10px 0 0;
+}
+
+.level1 {
+    margin: 0;
+    padding: 12px 0 0 20px;
+    list-style: none;
+    position: relative;
+}
+
+.level1 li {
+    float: left;
+    list-style: none;
+    margin-right: 24px;
+    position: relative;
+    font-weight: bold;
+}
+
+.level1 li a,
+.level1 li a:visited {
+    color: #c9302c;
+    text-decoration: none;
+}
+
+.level1 li a:hover {
+    color: green;
+}
+
+.level2 {
+    display: none;
+    position: absolute;
+    top: 22px;
+    left: 0;
+    padding: 0;
+    margin: 0;
+    z-index: 10;
+}
+
+.level1 li:hover .level2 {
+    display: block;
+}
+
+.level2 li {
+    float: none;
+    display: block;
+    width: 150px;
+    background: #ccc;
+    padding: 10px;
+    margin: 0;
+}
+
+.level2 li:hover {
+    background: #cc0;
+}
+
+#welcome {
+    background: #fff;
+    border-top: 2px dotted #9cc300;
+    border-bottom: 2px dotted #9cc300;
+    padding: 8px;
+    font-weight: bold;
+    text-align: center;
+}
+
+#center_content {
+    width: 900px;
+    overflow: hidden;
+    background: #fff;
+}
+
+#left {
+    width: 520px;
+    float: left;
+    padding: 10px 0 0 15px;
+}
+
+#right {
+    width: 330px;
+    float: right;
+    padding-top: 10px;
+    padding-right: 15px;
+}
+
+.title {
+    color: #c43b2b;
+    font-size: 18px;
+    margin: 5px 0 15px 0;
+}
+
+.product {
+    overflow: hidden;
+    border-bottom: 1px dashed #ccc;
+    padding: 10px 0 18px 0;
+    margin-bottom: 10px;
+}
+
+.product .img {
+    float: left;
+    width: 140px;
+    text-align: center;
+}
+
+.product .img img {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+}
+
+.product .description {
+    float: right;
+    width: 285px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 10px 12px;
+    background: #fff;
+}
+
+.product .name {
+    color: #c43b2b;
+    font-weight: bold;
+    margin: 0 0 10px 0;
+}
+
+.product .about {
+    margin: 0;
+    text-align: justify;
+    line-height: 1.4;
+}
+
+#promotion {
+    float: left;
+    width: 150px;
+}
+
+.product_small {
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.product_small .name {
+    color: #777;
+    margin-bottom: 4px;
+}
+
+.product_small .img {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 8px;
+    background: #fff;
+}
+
+.product_small .img img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
+
+#categories {
+    float: right;
+    width: 155px;
+}
+
+.menu_right {
+    margin: 0;
+    padding-left: 18px;
+    list-style: none;
+}
+
+.menu_right li {
+    padding: 6px 0 6px 8px;
+    border-bottom: 1px dashed #ccc;
+    font-weight: bold;
+    position: relative;
+}
+
+.menu_right li::before {
+    content: "»";
+    position: absolute;
+    left: -10px;
+    color: #777;
+}
+
+#footer {
+    clear: both;
+    min-height: 85px;
+    border-top: 1px dashed #ccc;
+    padding: 16px 18px;
+    color: #666;
+    overflow: hidden;
+}
+
+#footer .left {
+    float: left;
+    width: 620px;
+}
+
+#footer .right {
+    float: right;
+    font-style: italic;
+    color: #bfbfbf;
+    font-size: 28px;
+    padding-top: 25px;
+}
